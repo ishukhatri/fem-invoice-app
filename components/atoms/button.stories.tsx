@@ -11,23 +11,6 @@ type Story = StoryObj<typeof Button>;
 
 // export const Basic: Story = {};
 
-export const destructive: Story = {
-  render: () => <Button variant={"destructive"}>Delete</Button>,
-  args: {
-    variant: "destructive",
-  },
-};
-
-export const primary: Story = {
-  render: () => <Button>Primary</Button>,
-  args: {
-    variant: "default",
-  },
-};
-
-export const ghost: Story = {
-  render: () => <Button variant={"ghost"}>Ghost</Button>,
-  args: {
-    variant: "ghost",
-  },
+export const markAsPaid: Story = {
+  render: () => <Button variant={"primary1"}>Mark as Paid</Button>,
 };
