@@ -7,7 +7,7 @@ import { cn } from "../../lib/utils";
 const buttonVariants = cva(
   `inline-flex items-center justify-center 
   rounded-3xl 
-  px-6 py-4
+  pb-[15px] pt-[18px] px-6
   text-white text-base font-bold leading-none
   ring-offset-background transition-colors 
   focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 
@@ -15,15 +15,12 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary1: "bg-primary hover:bg-primary/90",
-        primary2: "bg-violet-500 hover:bg-indigo-400",
-        secondary: "bg-primary hover:bg-primary/90",
+        primary1: "bg-violet-500 hover:bg-indigo-400",
+        primary2:
+          "bg-gray-700 hover:bg-gray-950 text-slate-400 dark:text-indigo-100",
+        secondary:
+          "bg-slate-50 text-slate-400 dark:text-indigo-100 hover:bg-indigo-100",
         destructive: "bg-rose-500 hover:bg-red-300",
-        // outline:
-        //   "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
-        // secondary: "bg-secondary hover:bg-secondary/80",
-        // ghost: "hover:bg-accent hover:text-accent-foreground",
-        // link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
         default: "h-10 px-4 py-2",
