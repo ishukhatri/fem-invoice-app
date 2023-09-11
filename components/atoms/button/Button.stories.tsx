@@ -1,6 +1,6 @@
 // import * as React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "./buttons";
+import { Button } from "./Buttons";
 
 const meta: Meta<typeof Button> = {
   component: Button,
@@ -12,6 +12,10 @@ type Story = StoryObj<typeof Button>;
 // export const Basic: Story = {};
 
 export const primary1: Story = {
+  render: () => <Button variant={"primary1"}>Mark as Paid</Button>,
+};
+
+export const primary1WithIcon: Story = {
   render: () => <Button variant={"primary1"}>Mark as Paid</Button>,
 };
 
@@ -33,4 +37,12 @@ export const secondary_DarkMode: Story = {
 
 export const Destructive: Story = {
   render: () => <Button variant={"destructive"}>Delete</Button>,
+};
+
+export const Streched: Story = {
+  render: () => (
+    <Button variant={"secondary"} size={"streched"}>
+      Add new item
+    </Button>
+  ),
 };
